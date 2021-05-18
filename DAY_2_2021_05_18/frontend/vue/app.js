@@ -1,3 +1,17 @@
+let dataset = [
+    {
+        title: 'Article 1',
+        id: 1
+    },
+    {
+        title: 'Article 2',
+        id: 2
+    },
+    {
+        title: 'Article 3',
+        id: 3
+    }
+]
 const app = Vue.createApp({
     data(){
         return {
@@ -23,4 +37,5 @@ const app = Vue.createApp({
         }, 
     },
 })
+
 app.mount('#app')
