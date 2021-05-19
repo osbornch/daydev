@@ -14,6 +14,7 @@
         v-bind:src="picture":alt="`${firstName} ${lastName}`"/></im>
         <h1>{{firstName}} {{lastName}}</h1>
         <h3>Email: {{email}}</h3>
+        <h3>Task: {{taskName}}</h3>
         <button v-on:click="getUser()" :class="gender">Get Random User</button>
     </div>
 

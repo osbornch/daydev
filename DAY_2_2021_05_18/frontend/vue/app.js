@@ -33,6 +33,9 @@ const app = Vue.createApp({
             this.gender = results[0].gender,
             this.picture = results[0].picture.large
 
+            const tasks = await fetch('http://localhost:3000/tasks')
+            this.taskName = tasks[0]._name
+            
             console.log(this.gender)
         }, 
     },
