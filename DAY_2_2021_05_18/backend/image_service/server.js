@@ -10,14 +10,6 @@ mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/Tododb'); 
 
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
-
-var routes = require('./api/routes/imageRoutes'); //importing route
-routes(app); //register the route
-
-app.listen(port);
 
 app.use(function (req, res, next) {
 
@@ -38,11 +30,15 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
-  
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+
+var routes = require('./api/routes/imageRoutes'); //importing route
+routes(app); //register the route
+
+
+app.listen(port);
+
 console.log('Image Service RESTful API server started 1 on: ' + port);
 
