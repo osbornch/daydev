@@ -1,0 +1,34 @@
+{
+  "name": "image_service",
+  "version": "1.0.0",
+  "description": "Image service for managing images ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osbornch/daydev.git"
+  },
+  "keywords": [
+    "day",
+    "dev",
+    "backend",
+    "image",
+    "service"
+  ],
+  "author": "Xiaoxin",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/osbornch/daydev/issues"
+  },
+  "homepage": "https://github.com/osbornch/daydev#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
