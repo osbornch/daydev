@@ -1,10 +1,10 @@
 var mongoose = require('mongoose')
 var Schema = mongoose.Schema
 
-var ImageSchema = new Schema({
+var TaskSchema = new Schema({
     name: {
         type: String,
-        required: 'Kindly enter the name of the image'
+        required: 'Kindly enter the name of the task'
       },
       Created_date: {
         type: Date,
@@ -19,4 +19,4 @@ var ImageSchema = new Schema({
       }
 });
 
-module.exports = mongoose.model('Images', ImageSchema);
+module.exports = mongoose.model('Tasks', TaskSchema);
